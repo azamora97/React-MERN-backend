@@ -5,8 +5,12 @@ const dbConnection = async () => {
 
     try{
         // conexión apartir de versión mongo 7
-        await mongoose.connect( process.env.DB_CNN );
-        console.log('DB Online')
+        await mongoose.connect( process.env.DB_CNN, {
+            // useNewUrlParser: true, 
+            // useUnifiedTopology: true,
+            // useCreateIndex: true
+          } );
+        console.log('DB Online');
 
     }
     catch (error) {
