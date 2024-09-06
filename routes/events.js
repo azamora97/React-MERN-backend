@@ -44,7 +44,6 @@ router.put('/:id',
         );
 
 // Borrar Evento
-router.delete('/:id' ,eliminarEvento
-);
+router.delete('/:id' ,eliminarEvento );
 
 module.exports = router;
